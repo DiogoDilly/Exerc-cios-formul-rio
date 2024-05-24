@@ -1,0 +1,219 @@
+import java.util.Scanner;
+
+public class soma {
+    public static void main(String[] args) {
+    int[] vetor1 = new int[] {1,2,3,4,5};
+    int[] vetor2 = new int[] {1,2,3,4,5};
+         
+         for (int = vetor1 [0]; i <= vetor.length; i++){
+         int soma = i + vetor2[0];
+         system.out.println ("soma = " + soma);
+
+
+import java.util.Scanner;
+
+public class maior {
+    public static void main(String[] args) {
+int[] vetor1 = new int[] {3,5,4,2,1}
+   for (int i = vetor1 [4]; i <= 5 ; i++)
+    system.out.print (i + " ");
+
+
+        if(true){
+        arrays.sort(vetor1);
+        system.out.println("maior elemento" + vetor[4]);
+
+
+
+import java.util.Scanner;
+
+public class media {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite o tamanho do vetor: ");
+        int tamanho = scanner.nextInt();
+        
+        int[] vetor = new int[tamanho];
+        
+        System.out.println("Digite os elementos do vetor:");
+        for (int i = 0; i < tamanho; i++) {
+            vetor[i] = scanner.nextInt();
+        }
+        
+        int soma = 0;
+        for (int i = 0; i < tamanho; i++) {
+            soma += vetor[i];
+        }
+        
+        double media = (double) soma / tamanho;
+        
+        System.out.println("A média dos elementos do vetor é: " + media);
+        
+        scanner.close();
+    }
+}
+
+
+
+
+import java.util.Scanner;
+
+public class pareimpar {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite o tamanho do vetor: ");
+        int tamanho = scanner.nextInt();
+        
+        int[] vetor = new int[tamanho];
+        
+        System.out.println("Digite os elementos do vetor:");
+        for (int i = 0; i < tamanho; i++) {
+            vetor[i] = scanner.nextInt();
+        }
+        
+        int pares = 0;
+        int impares = 0;
+        for (int i = 0; i < tamanho; i++) {
+            if (vetor[i] % 2 == 0) {
+                pares++;
+            } else {
+                impares++;
+            }
+        }
+        
+        System.out.println("Quantidade de números pares: " + pares);
+        System.out.println("Quantidade de números ímpares: " + impares);
+        
+        scanner.close();
+    }
+}
+
+
+
+import java.util.Scanner;
+
+public class troca {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite o tamanho dos vetores: ");
+        int tamanho = scanner.nextInt();
+        
+        int[] vetor1 = new int[tamanho];
+        int[] vetor2 = new int[tamanho];
+        
+        System.out.println("Digite os elementos do primeiro vetor:");
+        for (int i = 0; i < tamanho; i++) {
+            vetor1[i] = scanner.nextInt();
+        }
+        
+        System.out.println("Digite os elementos do segundo vetor:");
+        for (int i = 0; i < tamanho; i++) {
+            vetor2[i] = scanner.nextInt();
+        }
+        
+        System.out.println("Vetor 1 antes da troca:");
+        exibirVetor(vetor1);
+        System.out.println("Vetor 2 antes da troca:");
+        exibirVetor(vetor2);
+        
+        for (int i = 0; i < tamanho; i++) {
+            int temp = vetor1[i];
+            vetor1[i] = vetor2[i];
+            vetor2[i] = temp;
+        }
+        
+        System.out.println("Vetor 1 após a troca:");
+        exibirVetor(vetor1);
+        System.out.println("Vetor 2 após a troca:");
+        exibirVetor(vetor2);
+        
+        scanner.close();
+    }
+    
+    public static void exibirVetor(int[] vetor) {
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.print(vetor[i] + " ");
+        }
+        System.out.println();
+    }
+}
+
+
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class crescente {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite o tamanho do vetor: ");
+        int tamanho = scanner.nextInt();
+        
+        int[] vetor = new int[tamanho];
+        
+        System.out.println("Digite os elementos do vetor:");
+        for (int i = 0; i < tamanho; i++) {
+            vetor[i] = scanner.nextInt();
+        }
+        
+        Arrays.sort(vetor);
+        
+        System.out.println("Vetor ordenado em ordem crescente:");
+        for (int i = 0; i < tamanho; i++) {
+            System.out.print(vetor[i] + " ");
+        }
+        System.out.println();
+        
+        scanner.close();
+    }
+}
+
+
+
+
+
+import java.util.Scanner;
+
+public class substituicao {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite o tamanho do vetor: ");
+        int tamanho = scanner.nextInt();
+        
+        int[] vetor = new int[tamanho];
+        
+        System.out.println("Digite os elementos do vetor:");
+        for (int i = 0; i < tamanho; i++) {
+            vetor[i] = scanner.nextInt();
+        }
+        
+        System.out.print("Digite o valor a ser substituído: ");
+        int valorSubstituir = scanner.nextInt();
+        
+        System.out.print("Digite o novo valor: ");
+        int novoValor = scanner.nextInt();
+        
+        for (int i = 0; i < tamanho; i++) {
+            if (vetor[i] == valorSubstituir) {
+                vetor[i] = novoValor;
+            }
+        }
+        
+        System.out.println("Vetor após a substituição:");
+        for (int i = 0; i < tamanho; i++) {
+            System.out.print(vetor[i] + " ");
+        }
+        System.out.println();
+        
+        scanner.close();
+    }
+}
+
+
+
+
