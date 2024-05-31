@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de criação de contato</h1>
+<form action="">
+    <label for="message">Nome:</label>
+    <input type="text" name="username" required minlength="3" maxlength="40">
+    <label for="message">Senha:</label>
+    <input type="password" name="password" required>
+    <label for="message">Email:</label>
+    <input type="email" name="email" required >
+    <label for="message">Assunto:</label>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+    <button type="submit">Enviar</button>
+</form>
+
+<h1>Formulario de cadastro</h1>
+<form action="">
+    <label for="message">Nome:</label>
+    <input type="text" name="username" required minlength="3" maxlength="40">
+    <label for="message">Senha:</label>
+    <input type="password" name="password" required id = "senha" placeholder="Senha">
+    <label for="message">confirmação de senha:</label>
+    <input type="password" name="password" required id = "senhaC" placeholder="Confirmar Senha">
+
+    <label for="message">email:</label>
+    <input type="email" name="email" required >
+    <label for="message">data de nascimento:</label>
+    <input type="date" name="date" required>
+    <button type="submit" onclick="return validaPassword()">Enviar</button>
+</form>
+  <script src="teste.js"></script>
+</body>
+</html>
